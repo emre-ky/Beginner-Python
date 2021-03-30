@@ -1,0 +1,11 @@
+#If you want to get the Pi number to be 3, replace 3.14 in line 5.
+
+
+def circleArea(radius):
+    area = float(radius) * float(radius)*3.14
+    print ("Area :",area)
+    return alan
+ 
+r = input("Enter the radius :")
+ 
+circleArea(r)
