@@ -1,0 +1,20 @@
+from random import randint
+ 
+rand=randint(1, 100)
+counter=0
+ 
+while True:
+    counter+=1
+    number=int(input("Enter a number between 1 and 100: (0 exit):"))
+    if(number==0):
+        print("You canceled the game.")
+        break
+    elif number < rand:
+        print("Enter a higher number!")
+        continue
+    elif number > rand:
+        print("Enter a lower number!")
+        continue
+    else:
+        print("Randomly selected number {0}!".format(rand))
+        print("The number of numbers you guessed {0}".format(counter))
